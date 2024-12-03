@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, TouchableOpacity, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import React from 'react'; 
+import ChatBot from './ChatBot';
 
 export default function App() {
   // Dummy data
@@ -59,6 +61,8 @@ export default function App() {
         <Text style={styles.navItem}>Accounts</Text>
         <Text style={styles.navItem}>Help</Text>
       </View>
+
+      <div className="App"> <h1>Azure AI Chat Bot</h1> <ChatBot /> </div>
 
       <StatusBar style="light" />
     </LinearGradient>
